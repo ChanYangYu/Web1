@@ -1,19 +1,23 @@
 function setValue(mode){
-    var btn_lst = document.querySelectorAll('.day_night');
-      for(var i = 0; i < btn_lst.length; i++)
-        btn_lst[i].value = mode;
+    // var btn_lst = document.querySelectorAll('.day_night');
+    //   for(var i = 0; i < btn_lst.length; i++)
+    //     btn_lst[i].value = mode;
+    $('.day_night').val(mode);
   }
 
   function setLinkColor(color){
-    var a_lst = document.querySelectorAll('a');
-      for(var i = 0; i < a_lst.length; i++)
-        a_lst[i].style.color = color;
+    // var a_lst = document.querySelectorAll('a');
+    //   for(var i = 0; i < a_lst.length; i++)
+    //     a_lst[i].style.color = color;
+    $('a').css('color', color);
   }
 
   function setBodyColor(backgroundColor, color){
-    var target = document.querySelector('body');
-    target.style.backgroundColor = backgroundColor;
-    target.style.color = color;
+    // var target = document.querySelector('body');
+    // target.style.backgroundColor = backgroundColor;
+    // target.style.color = color;
+    $('body').css('backgroundColor',backgroundColor);
+    $('body').css('color', color);
   }
 
   function dayNightHandler(self){
